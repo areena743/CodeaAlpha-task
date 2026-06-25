@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 style="text-align: center; color: #333; margin-top: 20px;">My Image Gallery</h1>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-container">
+        <div class="gallery-item"><img src="https://picsum.photos/400/300?random=1" alt="Image 1" onclick="openLightbox(this.src)"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/400/300?random=2" alt="Image 2" onclick="openLightbox(this.src)"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/400/300?random=3" alt="Image 3" onclick="openLightbox(this.src)"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/400/300?random=4" alt="Image 4" onclick="openLightbox(this.src)"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/400/300?random=5" alt="Image 5" onclick="openLightbox(this.src)"></div>
+        <div class="gallery-item"><img src="https://picsum.photos/400/300?random=6" alt="Image 6" onclick="openLightbox(this.src)"></div>
+    </div>
+
+    <!-- Lightbox (Popup View) -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Popup View">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
